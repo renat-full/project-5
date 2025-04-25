@@ -497,18 +497,27 @@
           </ul>
         </div>
       </div>
-      <form class="subscribe-form">
-        <p class="subscribe-foot">Subscribe</p>
-        <label class="visually-hidden" for="subscribe-email">Email</label>
-        <input
-          id="subscribe-email"
-          type="email"
-          name="subscribe-email"
-          placeholder="E-mail"
-          required
-        />
-        <button type="submit">Subscribe</button>
-      </form>
+      <div class="subscribe-wrapper">
+        <form class="subscribe-form">
+          <p class="subscribe-foot">Subscribe</p>
+          <label class="subscribe-label" for="subscribe-email">
+            <input
+              id="subscribe-email"
+              type="email"
+              name="subscribe-email"
+              placeholder="E-mail"
+              required
+              class="subscribe-input"
+            />
+          </label>
+          <button type="submit" class="subscribe-button">
+            Subscribe
+            <svg class="subscribe-icon" width="24" height="24">
+              <use href="./images/icons.svg#Frame"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </footer>
     <div class="backdrop" data-modal>
       <div class="modal">

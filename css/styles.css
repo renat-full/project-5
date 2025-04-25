@@ -650,19 +650,32 @@ p {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 320px;
+}
+
 .subscribe-foot {
+    margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #fff;
+    color: #ffffff;
 }
 
 .subscribe-form {
     display: flex;
+    flex-direction: row;
     gap: 24px;
-    flex-wrap: wrap;
     align-items: center;
+}
+
+.subscribe-label {
+    font-size: 14px;
+    color: #fff;
 }
 
 .subscribe-form input[type="email"] {
@@ -689,6 +702,7 @@ p {
 }
 
 .subscribe-form button {
+    min-width: 165px;
     height: 40px;
     padding: 8px 24px;
     border-radius: 4px;
@@ -702,15 +716,22 @@ p {
     letter-spacing: 0.04em;
     display: flex;
     align-items: center;
-    gap: 16px;
+    justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscribe-form button:hover,
 .subscribe-form button:focus {
+    
     background-color: #404bbf;
 }
 
+.subscribe-wrapper {
+    background-color: #2e2f42;
+    padding: 24px 0;
+    display: flex;
+    justify-content: flex-end;
+}
 .text-modal {
     font-weight: 500;
     font-size: 16px;
