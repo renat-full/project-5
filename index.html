@@ -69,7 +69,9 @@
       <section class="first-section section">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="button-order">Order Service</button>
+          <button type="button" class="button-order" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <section class="second-section section-glob">
@@ -495,6 +497,70 @@
           </ul>
         </div>
       </div>
+      <form class="subscribe-form">
+        <p class="subscribe-foot">Subscribe</p>
+        <label class="visually-hidden" for="subscribe-email">Email</label>
+        <input
+          id="subscribe-email"
+          type="email"
+          name="subscribe-email"
+          placeholder="E-mail"
+          required
+        />
+        <button type="submit">Subscribe</button>
+      </form>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <button class="modal-close-bth" type="button" data-modal-close>
+          <svg class="icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black"></use>
+          </svg>
+        </button>
+
+        <p class="text-modal">Leave your contacts and we will call you back</p>
+        <form>
+          <label for="user-name" class="form-label">Name</label>
+          <div class="input-wrapper">
+            <input
+              id="user-name"
+              name="user-name"
+              type="text"
+              class="form-input"
+            />
+          </div>
+          <label for="user-phone" class="form-label">Phone</label>
+          <div class="input-wrapper">
+            <input
+              id="user-phone"
+              name="user-phone"
+              type="tel"
+              class="form-input"
+            />
+          </div>
+          <label class="form-label" for="user-email">Email</label>
+          <div class="input-wrapper">
+            <input
+              id="user-email"
+              name="user-email"
+              type="email"
+              class="form-input"
+            />
+          </div>
+          <label class="form-label" for="user-comment">Comment</label>
+          <div class="input-wrapper">
+            <textarea
+              id="user-comment"
+              name="user-comment"
+              class="form-input"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+
+          <button type="submit" class="submit-bth">Send</button>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
