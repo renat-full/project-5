@@ -517,6 +517,7 @@
         </div>
       </div>
     </footer>
+
     <div class="backdrop" data-modal>
       <div class="modal">
         <button class="modal-close-bth" type="button" data-modal-close>
@@ -524,15 +525,16 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-
         <p class="text-modal">Leave your contacts and we will call you back</p>
         <form>
-          <label for="user-name" class="form-label"
-            >Name
-            <svg class="icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-          </label>
+          <div class="form-info">
+            <label for="user-name" class="form-label"
+              >Name
+              <svg class="icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </label>
+          </div>
           <div class="input-wrapper">
             <input
               id="user-name"
@@ -541,12 +543,14 @@
               class="form-input"
             />
           </div>
-          <label for="user-phone" class="form-label"
-            >Phone
-            <svg class="icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-          </label>
+          <div class="form-info">
+            <label for="user-phone" class="form-label"
+              >Phone
+              <svg class="icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </label>
+          </div>
           <div class="input-wrapper">
             <input
               id="user-phone"
@@ -555,12 +559,14 @@
               class="form-input"
             />
           </div>
-          <label class="form-label" for="user-email"
-            >Email
-            <svg class="icon" width="18" height="24">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
-          </label>
+          <div class="form-info">
+            <label class="form-label" for="user-email"
+              >Email
+              <svg class="icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </label>
+          </div>
           <div class="input-wrapper">
             <input
               id="user-email"
@@ -569,7 +575,9 @@
               class="form-input"
             />
           </div>
-          <label class="form-label" for="user-comment">Comment </label>
+          <div class="form-info">
+            <label class="form-label" for="user-comment">Comment </label>
+          </div>
           <div class="input-wrapper">
             <textarea
               id="user-comment"

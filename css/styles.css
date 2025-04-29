@@ -1,5 +1,6 @@
 :root {
     --accent-color: #4d5ae5;
+    --label-color: #8e8f99;
 }
 
 *,
@@ -661,6 +662,8 @@ p {
     line-height: 1.17;
     letter-spacing: 0.04em;
     display: block;
+    color: var(--label-color);
+    margin-bottom: 4px;
 }
 
 .subscribe-wrapper {
@@ -755,4 +758,7 @@ p {
     width: 360px;
     height: 40px;
 
+}
+.form-info{
+    margin-bottom: 8px;
 }
