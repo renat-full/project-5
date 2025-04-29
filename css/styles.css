@@ -650,14 +650,16 @@ p {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.subscribe-container {
+.subscribe-wrapper {
     display: flex;
     flex-direction: column;
     gap: 24px;
     max-width: 320px;
+    justify-content: flex-end;
+    align-items: center;
 }
 
-.subscribe-foot {
+.subscribe-text {
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -668,69 +670,62 @@ p {
 
 .subscribe-form {
     display: flex;
-    flex-direction: row;
     gap: 24px;
-    align-items: center;
 }
 
 .subscribe-label {
-    font-size: 14px;
-    color: #fff;
+    display: flex;
+    flex-direction: column;
 }
 
-.subscribe-form input[type="email"] {
-    min-width: 264px;
+.subscribe-input {
+    width: 264px;
     height: 40px;
-    padding: 8px 16px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    border: 1px solid #ffffff;
     background-color: transparent;
-    color: #ffffff;
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 12px;
+    line-height: 2;
     letter-spacing: 0.04em;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #ffffff;
 }
 
-.subscribe-form input[type="email"]::placeholder {
-    color: rgba(255, 255, 255, 0.6);
+.subscribe-input::placeholder {
+    color: #ffffff;
 }
 
-.subscribe-form input[type="email"]:focus {
+.subscribe-input:focus {
     outline: none;
     border-color: #ffffff;
 }
 
-.subscribe-form button {
+.subscribe-button {
     min-width: 165px;
     height: 40px;
-    padding: 8px 24px;
-    border-radius: 4px;
-    background-color: #4d5ae5;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
+    font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4d5ae5;
+    border: none;
+    border-radius: 4px;
 }
 
-.subscribe-form button:hover,
-.subscribe-form button:focus {
-    
+.subscribe-button:hover,
+.subscribe-button:focus {
     background-color: #404bbf;
 }
 
-.subscribe-wrapper {
-    background-color: #2e2f42;
-    padding: 24px 0;
-    display: flex;
-    justify-content: flex-end;
+.subscribe-icon {
+    margin-left: 16px;
 }
 .text-modal {
     font-weight: 500;
