@@ -496,6 +496,7 @@ p {
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .social-links:hover,
@@ -560,6 +561,10 @@ p {
     align-items: center;
     justify-content: center;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.social-container{
+    margin-right: 80px;
 }
 
 .footer-links:hover,
@@ -659,10 +664,8 @@ p {
 }
 
 .subscribe-wrapper {
-    display: flex;
     flex-direction: column;
     gap: 24px;
-    max-width: 320px;
     justify-content: flex-end;
     align-items: center;
 }
