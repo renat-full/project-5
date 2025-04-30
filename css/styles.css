@@ -1,8 +1,8 @@
 :root {
+    --primary-brand: #404bbf;
     --accent-color: #4d5ae5;
     --label-color: #8e8f99;
---accent-color: #404bbf;
-    --icon-fill-color: #f4f4fd;
+    --primary-white: #f4f4fd;
     --text-color-secondary: #8e8f99;
     --link-color: #4d5ae5;
 }
@@ -821,6 +821,7 @@ p {
 .checkbox-box {
     display: inline-flex;
     align-items: center;
+    justify-content: center;
     fill: transparent;
     width: 16px;
     height: 16px;
@@ -830,9 +831,9 @@ p {
 }
 
 .checkbox-input:checked+.checkbox-label>.checkbox-box {
-    background-color: var(--accent-color);
+    background-color: var(--primary-brand);
     border: none;
-    fill: var(--icon-fill-color);
+    fill: var(--primary-white);
 }
 
 .privacy-link {
@@ -858,6 +859,7 @@ p {
     background-color: #4d5ae5;
     border: none;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .submit-bth:hover {
