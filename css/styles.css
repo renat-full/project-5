@@ -847,6 +847,7 @@ p {
 .submit-bth {
     display: block;
     min-width: 169px;
+    margin: 0 auto;
     height: 56px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
